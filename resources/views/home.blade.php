@@ -356,12 +356,12 @@
     </div>
 </section>
 
-<section class="bg-gray-100 py-12">
-  <div class="max-w-6xl mx-auto px-6">
+<section class="bg-gray-100 py-16 px-6">
+  <div class="container mx-auto ">
     <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">Latest News</h2>
     <div class="grid md:grid-cols-3 gap-6">
       <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
-        <img src="https://via.placeholder.com/400" alt="News Image" class="w-full h-52 object-cover">
+        <img src="https://ashmicfence.s3.ap-southeast-2.amazonaws.com/products/Installed-panel-scaled.jpg" alt="News Image" class="w-full h-60 object-cover">
         <div class="p-5">
           <h3 class="text-xl font-semibold text-gray-900">Exciting News Title</h3>
           <p class="text-gray-600 mt-2 line-clamp-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod...</p>
@@ -369,7 +369,7 @@
         </div>
       </article>
       <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
-        <img src="https://via.placeholder.com/400" alt="News Image" class="w-full h-52 object-cover">
+        <img src="https://ashmicfence.s3.ap-southeast-2.amazonaws.com/products/Installed-panel-scaled.jpg" alt="News Image" class="w-full h-60 object-cover">
         <div class="p-5">
           <h3 class="text-xl font-semibold text-gray-900">Breaking News Update</h3>
           <p class="text-gray-600 mt-2 line-clamp-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium...</p>
@@ -377,7 +377,7 @@
         </div>
       </article>
       <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
-        <img src="https://via.placeholder.com/400" alt="News Image" class="w-full h-52 object-cover">
+        <img src="https://ashmicfence.s3.ap-southeast-2.amazonaws.com/products/Installed-panel-scaled.jpg" alt="News Image" class="w-full h-60 object-cover">
         <div class="p-5">
           <h3 class="text-xl font-semibold text-gray-900">Industry Insights</h3>
           <p class="text-gray-600 mt-2 line-clamp-3">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam...</p>
@@ -408,7 +408,47 @@
         });
     });
 </script>
+<section id="who-we-are" class="bg-gray-100 py-16 px-6">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        
+        <!-- Left Column -->
+        <div>
+            <h2 class="text-2xl font-bold mb-2">COMMON QUESTIONS</h2>
+            <h3 class="text-lg font-semibold text-gray-700 mb-4">Frequently Asked Questions</h3>
+            <p class="text-gray-600">Questions commonly asked about our panels, materials, applications, and installation considerations.</p>
+        </div>
+        
+        <!-- Right Column -->
+        <div x-data="{ open: null }" class="space-y-4">
+            <div class="border-b">
+                <button @click="open === 1 ? open = null : open = 1" class="w-full flex justify-between items-center py-3 text-left text-lg font-semibold">
+                    What is your refund policy?
+                    <span x-show="open !== 1" class="text-gray-500">+</span>
+                    <span x-show="open === 1" class="text-gray-500">-</span>
+                </button>
+                <div x-show="open === 1" x-collapse class="text-gray-600 pb-3">We offer a full refund within 30 days of purchase.</div>
+            </div>
 
+            <div class="border-b">
+                <button @click="open === 2 ? open = null : open = 2" class="w-full flex justify-between items-center py-3 text-left text-lg font-semibold">
+                    How long does shipping take?
+                    <span x-show="open !== 2" class="text-gray-500">+</span>
+                    <span x-show="open === 2" class="text-gray-500">-</span>
+                </button>
+                <div x-show="open === 2" x-collapse class="text-gray-600 pb-3">Shipping takes 5-7 business days on average.</div>
+            </div>
+
+            <div class="border-b">
+                <button @click="open === 3 ? open = null : open = 3" class="w-full flex justify-between items-center py-3 text-left text-lg font-semibold">
+                    Do you offer international shipping?
+                    <span x-show="open !== 3" class="text-gray-500">+</span>
+                    <span x-show="open === 3" class="text-gray-500">-</span>
+                </button>
+                <div x-show="open === 3" x-collapse class="text-gray-600 pb-3">Yes, we ship worldwide with additional fees.</div>
+            </div>
+        </div>
+    </div>
+</section>
 <section id="cta" class="bg-black text-white py-22 px-6 text-center">
     <div class="container mx-auto max-w-3xl">
         <h2 class="text-4xl font-extrabold mb-4">Let's Build Strength and Security Together</h2>
