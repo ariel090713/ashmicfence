@@ -76,7 +76,7 @@
                         x-show="dropdown === 'resources'"
                         x-transition
                         class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-lg py-2">
-                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-orange-600 hover:text-white">Fence News</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-orange-600 hover:text-white">News</a>
                         <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-orange-600 hover:text-white">Videos</a>
                         <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-orange-600 hover:text-white">Faqs</a>
                     </div>

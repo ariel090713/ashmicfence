@@ -304,6 +304,7 @@
     </div>
 </section>
 
+
 <section id="who-we-are" class="bg-gray-100 py-16 px-6">
     <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <!-- Text Content -->
@@ -353,6 +354,38 @@
                 class="w-full h-auto p-20">
         </div>
     </div>
+</section>
+
+<section class="bg-gray-100 py-12">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">Latest News</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
+        <img src="https://via.placeholder.com/400" alt="News Image" class="w-full h-52 object-cover">
+        <div class="p-5">
+          <h3 class="text-xl font-semibold text-gray-900">Exciting News Title</h3>
+          <p class="text-gray-600 mt-2 line-clamp-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod...</p>
+          <a href="#" class="text-blue-600 font-medium mt-3 inline-block">Read More →</a>
+        </div>
+      </article>
+      <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
+        <img src="https://via.placeholder.com/400" alt="News Image" class="w-full h-52 object-cover">
+        <div class="p-5">
+          <h3 class="text-xl font-semibold text-gray-900">Breaking News Update</h3>
+          <p class="text-gray-600 mt-2 line-clamp-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium...</p>
+          <a href="#" class="text-blue-600 font-medium mt-3 inline-block">Read More →</a>
+        </div>
+      </article>
+      <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
+        <img src="https://via.placeholder.com/400" alt="News Image" class="w-full h-52 object-cover">
+        <div class="p-5">
+          <h3 class="text-xl font-semibold text-gray-900">Industry Insights</h3>
+          <p class="text-gray-600 mt-2 line-clamp-3">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam...</p>
+          <a href="#" class="text-blue-600 font-medium mt-3 inline-block">Read More →</a>
+        </div>
+      </article>
+    </div>
+  </div>
 </section>
 
 <script>
