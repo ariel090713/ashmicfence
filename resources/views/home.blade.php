@@ -358,14 +358,18 @@
 
 <section class="bg-gray-100 py-16 px-6">
   <div class="container mx-auto ">
-    <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">Latest News</h2>
+
+    <h2 class="text-4xl font-extrabold text-gray-900 mb-6 text-center">Latest News</h2>
+    <p class="text-lg text-gray-600 text-center mb-6">
+    Get updates on our latest steel and fencing products, industry trends, and special offers.
+    </p>
     <div class="grid md:grid-cols-3 gap-6">
       <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
         <img src="https://ashmicfence.s3.ap-southeast-2.amazonaws.com/products/Installed-panel-scaled.jpg" alt="News Image" class="w-full h-60 object-cover">
         <div class="p-5">
           <h3 class="text-xl font-semibold text-gray-900">Exciting News Title</h3>
           <p class="text-gray-600 mt-2 line-clamp-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod...</p>
-          <a href="#" class="text-blue-600 font-medium mt-3 inline-block">Read More →</a>
+          <a href="#" class="text-orange-600 font-medium mt-3 inline-block">Read More →</a>
         </div>
       </article>
       <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
@@ -373,7 +377,7 @@
         <div class="p-5">
           <h3 class="text-xl font-semibold text-gray-900">Breaking News Update</h3>
           <p class="text-gray-600 mt-2 line-clamp-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium...</p>
-          <a href="#" class="text-blue-600 font-medium mt-3 inline-block">Read More →</a>
+          <a href="#" class="text-orange-600 font-medium mt-3 inline-block">Read More →</a>
         </div>
       </article>
       <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
@@ -381,7 +385,7 @@
         <div class="p-5">
           <h3 class="text-xl font-semibold text-gray-900">Industry Insights</h3>
           <p class="text-gray-600 mt-2 line-clamp-3">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam...</p>
-          <a href="#" class="text-blue-600 font-medium mt-3 inline-block">Read More →</a>
+          <a href="#" class="text-orange-600 font-medium mt-3 inline-block">Read More →</a>
         </div>
       </article>
     </div>
@@ -415,7 +419,12 @@
         <div>
             <h2 class="text-2xl font-bold mb-2">COMMON QUESTIONS</h2>
             <h3 class="text-lg font-semibold text-gray-700 mb-4">Frequently Asked Questions</h3>
-            <p class="text-gray-600">Questions commonly asked about our panels, materials, applications, and installation considerations.</p>
+            <p class="text-gray-600 mb-6">Questions commonly asked about our panels, materials, applications, and installation considerations.</p>
+            <div class="w-full flex justify-center md:justify-start">
+                <a href="#faqs" class="bg-orange-600 text-white font-semibold px-6 py-3 rounded-full text-lg shadow-md hover:bg-orange-700 transition-all">
+                    View all FAQs
+                </a>
+            </div>
         </div>
         
         <!-- Right Column -->
