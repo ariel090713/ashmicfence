@@ -334,7 +334,7 @@
                     <p class="text-gray-700">Successful Installations</p>
                 </div>
                 <div>
-                    <span class="text-4xl font-bold text-orange-600 counter" data-target="300">0</span>
+                    <span class="text-4xl font-bold text-orange-600 counter" data-target="500">0</span>
                     <p class="text-gray-700">Happy Clients</p>
                 </div>
             </div>
