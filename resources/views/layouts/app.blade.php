@@ -7,4 +7,5 @@
     @isset($slot)
         {{ $slot }}
     @endisset
+
 @endsection

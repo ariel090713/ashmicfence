@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+
+@livewire('chatbot')
 <div class="swiper mySwiper relative" style="height: calc(100vh - 7rem);">
     <div class="swiper-wrapper">
         <!-- First Slide (Eye-catching Hero) -->
@@ -412,52 +414,7 @@
         });
     });
 </script>
-<section id="who-we-are" class="bg-gray-100 py-16 px-6">
-    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        
-        <!-- Left Column -->
-        <div>
-            <h2 class="text-2xl font-bold mb-2">COMMON QUESTIONS</h2>
-            <h3 class="text-lg font-semibold text-gray-700 mb-4">Frequently Asked Questions</h3>
-            <p class="text-gray-600 mb-6">Questions commonly asked about our panels, materials, applications, and installation considerations.</p>
-            <div class="w-full flex justify-center md:justify-start">
-                <a href="#faqs" class="bg-orange-600 text-white font-semibold px-6 py-3 rounded-full text-lg shadow-md hover:bg-orange-700 transition-all">
-                    View all FAQs
-                </a>
-            </div>
-        </div>
-        
-        <!-- Right Column -->
-        <div x-data="{ open: null }" class="space-y-4">
-            <div class="border-b">
-                <button @click="open === 1 ? open = null : open = 1" class="w-full flex justify-between items-center py-3 text-left text-lg font-semibold">
-                    What is your refund policy?
-                    <span x-show="open !== 1" class="text-gray-500">+</span>
-                    <span x-show="open === 1" class="text-gray-500">-</span>
-                </button>
-                <div x-show="open === 1" x-collapse class="text-gray-600 pb-3">We offer a full refund within 30 days of purchase.</div>
-            </div>
 
-            <div class="border-b">
-                <button @click="open === 2 ? open = null : open = 2" class="w-full flex justify-between items-center py-3 text-left text-lg font-semibold">
-                    How long does shipping take?
-                    <span x-show="open !== 2" class="text-gray-500">+</span>
-                    <span x-show="open === 2" class="text-gray-500">-</span>
-                </button>
-                <div x-show="open === 2" x-collapse class="text-gray-600 pb-3">Shipping takes 5-7 business days on average.</div>
-            </div>
-
-            <div class="border-b">
-                <button @click="open === 3 ? open = null : open = 3" class="w-full flex justify-between items-center py-3 text-left text-lg font-semibold">
-                    Do you offer international shipping?
-                    <span x-show="open !== 3" class="text-gray-500">+</span>
-                    <span x-show="open === 3" class="text-gray-500">-</span>
-                </button>
-                <div x-show="open === 3" x-collapse class="text-gray-600 pb-3">Yes, we ship worldwide with additional fees.</div>
-            </div>
-        </div>
-    </div>
-</section>
 <section id="cta" class="bg-black text-white py-22 px-6 text-center">
     <div class="container mx-auto max-w-3xl">
         <h2 class="text-4xl font-extrabold mb-4">Let's Build Strength and Security Together</h2>

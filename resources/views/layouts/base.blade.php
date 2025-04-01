@@ -78,7 +78,6 @@
                         class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-lg py-2">
                         <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-orange-600 hover:text-white">News</a>
                         <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-orange-600 hover:text-white">Videos</a>
-                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-orange-600 hover:text-white">Faqs</a>
                     </div>
                 </div>
                 <!-- Dropdown: About -->
@@ -332,11 +331,6 @@
                     <p class="text-lg font-medium text-white">Helpful Links</p>
                     <nav class="mt-8">
                         <ul class="space-y-4 text-sm">
-                            <li>
-                                <a class="text-white transition hover:text-white/75" href="/">
-                                FAQs
-                                </a>
-                            </li>
                             <li>
                                 <a class="text-white transition hover:text-white/75" href="/">
                                 Terms and Conditions
