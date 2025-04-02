@@ -11,7 +11,7 @@
     </button>
 
     <!-- Chat Window -->
-    <div x-show="open" x-transition class="absolute bottom-16 right-0 w-full md:w-80 bg-white shadow-2xl rounded-lg p-4 border border-gray-200">
+    <div x-show="open" x-transition class="absolute bottom-16 right-0 w-70 md:w-100 bg-white shadow-2xl rounded-lg p-4 border border-gray-200">
         <div class="flex justify-between items-center border-b pb-2">
             <h3 class="text-lg font-semibold">AI Chat Support</h3>
             <button @click="open = false" class="text-gray-500">&times;</button>
@@ -27,10 +27,21 @@
             @endforeach
         </div>
 
-        <div class="flex items-center border-t pt-2">
-            <input wire:model="input" wire:keydown.enter="sendMessage" type="text" class="flex-1 p-2 border rounded-md" placeholder="Type a message...">
-            <button wire:click="sendMessage" class="ml-2 p-2 bg-orange-600 text-white rounded-md">Send</button>
-        </div>
+        <div class="flex items-center border-t pt-2 flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
+    <input 
+        wire:model="input" 
+        wire:keydown.enter="sendMessage" 
+        type="text" 
+        class="flex-1 p-2 border rounded-md w-full sm:w-auto" 
+        placeholder="Type a message..."
+    >
+    <button 
+        wire:click="sendMessage" 
+        class="ml-2 p-2 bg-orange-600 text-white rounded-md w-full sm:w-auto">
+        Send
+    </button>
+</div>
+
     </div>
     <style>
     @keyframes wiggle {
