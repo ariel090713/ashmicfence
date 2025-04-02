@@ -11,7 +11,7 @@
     </button>
 
     <!-- Chat Window -->
-    <div x-show="open" x-transition class="absolute bottom-16 right-0 w-100 bg-white shadow-2xl rounded-lg p-4 border border-gray-200">
+    <div x-show="open" x-transition class="absolute bottom-16 right-0 w-full md:w-80 bg-white shadow-2xl rounded-lg p-4 border border-gray-200">
         <div class="flex justify-between items-center border-b pb-2">
             <h3 class="text-lg font-semibold">AI Chat Support</h3>
             <button @click="open = false" class="text-gray-500">&times;</button>
